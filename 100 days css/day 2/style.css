@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700;300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 5%;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  overflow: hidden;
+  background: aqua;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.circles {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  animation: circles 7s ease-in-out infinite;
+  transform-style: preserve-3d;
+}
+
+.circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.c-1 {
+  transform: rotateX(0deg);
+}
+
+.c-2 {
+  transform: rotateX(30deg);
+}
+
+.c-3 {
+  transform: rotateX(60deg);
+}
+
+.c-4 {
+  transform: rotateX(90deg);
+}
+
+.c-5 {
+  transform: rotateX(120deg);
+}
+
+.c-6 {
+  transform: rotateX(150deg);
+}
+
+@keyframes circles {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+  25% {
+    transform: rotateY(45deg) rotateX(180deg) rotateZ(20deg);
+  }
+  50% {
+    transform: rotateY(225deg) rotateX(0deg) rotateZ(90deg);
+  }
+  75% {
+    transform: rotateY(0deg) rotateX(45deg) rotateZ(120deg);
+  }
+  100% {
+    transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  }
+}

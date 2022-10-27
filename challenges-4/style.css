@@ -9,6 +9,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .container {

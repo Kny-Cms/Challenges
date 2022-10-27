@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame  {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  background-color: gray;
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: 'Open Sans'; sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #333;
+  height: 400px;
+  width: 400px;
+  color: white;
+}
+
+.keyboard {
+  background-color: #666;
+  border-top: 2px solid #888;
+  padding-top: 10px;
+}
+
+.keyboard .alphabets,
+.keyboard .numbers {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.keyboard .alphabets li,
+.keyboard .numbers li {
+  width: 40px;
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.keyboard li:active {
+  color: goldenrod;
+}
+
+.keyboard li:focus {
+  outline: none;
+}
+
+.keyboard li:focus-visible {
+  outline: 1px solid goldenrod;
+}
